@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KwekuDey Admin</title><link rel="stylesheet" href="style.css"></head>
+<body class="admin-page">
+<header class="nav"><a class="logo" href="index.html">KWEKU<span>DEY</span></a><a href="index.html">View site</a></header>
+<main class="admin-wrap">
+<div id="login"><p class="eyebrow">PRIVATE AREA</p><h1>Admin Login</h1><p class="muted">This starter dashboard is local-only. A secure online login/database will be connected after hosting.</p>
+<input id="pin" type="password" placeholder="Admin PIN"><button class="btn" onclick="login()">Enter Dashboard</button><p id="login-msg"></p></div>
+<div id="dashboard" hidden><p class="eyebrow">CONTENT MANAGER</p><h1>Manage your site</h1>
+<p class="muted">Edit the content below, then download the updated data file and replace <b>site-data.js</b> in your website folder.</p>
+<label>Artist tagline<input id="tagline"></label>
+<label>Booking email<input id="email"></label>
+<h2>Music</h2><div id="music-edit"></div><button class="btn" onclick="addMusic()">+ Add song</button>
+<h2>Shows</h2><div id="shows-edit"></div><button class="btn" onclick="addShow()">+ Add show</button>
+<h2>Videos</h2><div id="videos-edit"></div><button class="btn" onclick="addVideo()">+ Add video</button>
+<div class="actions"><button class="btn" onclick="downloadData()">Download site-data.js</button><button class="btn ghost" onclick="location.reload()">Log out</button></div>
+</div></main>
+<script src="site-data.js"></script><script src="admin.js"></script>
+</body></html>
